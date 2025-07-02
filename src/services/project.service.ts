@@ -1,6 +1,5 @@
 import { format } from "path";
 import ForbiddenException from "../errors/forbidden.exception";
-import { Prisma } from "../generated/prisma";
 import prisma from "../helpers/prisma";
 import ProjectValidation, {
   ProjectCreate,
@@ -14,6 +13,7 @@ import Validation from "../validations/validate";
 import formatPagination from "../helpers/format_pagination";
 import { defaultLimit, defaultPage  } from "../consts/pagination";
 import NotFoundException from "../errors/not_found.exception";
+import { Prisma } from "@prisma/client";
 
 
 export default class ProjectService {

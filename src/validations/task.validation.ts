@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { TaskStatus } from "../generated/prisma";
+import { TaskStatus } from "@prisma/client";
 
 export default class TaskValidation {
     static CREATE = z.object({
