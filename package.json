@@ -4,10 +4,9 @@
   "main": "app.js",
  "scripts": {
   "dev": "nodemon src/app.ts",
-  "build": "npx prisma generate && tsc",
+  "build": "prisma generate && tsc",
   "start": "node dist/app.js"
 },
-
   "keywords": [],
   "author": "",
   "license": "ISC",
