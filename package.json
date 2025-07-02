@@ -4,9 +4,8 @@
   "main": "app.js",
  "scripts": {
   "dev": "nodemon src/app.ts",
-  "build": "tsc",
-  "start": "node dist/app.js",
-  "generate": "npx prisma generate"
+  "build": "npx prisma generate && tsc",
+  "start": "node dist/app.js"
 },
 
   "keywords": [],
